@@ -6,15 +6,10 @@ metadata:
 spec:
   interval: 10m
   timeout: 5m
-  chart:
-    spec:
-      chart: postgresql
-      version: '15.5.*'
-      chartRef:
-        kind: OCIRepository
-        name: postgresql-repository
-        namespace: flux-system
-      interval: 5m
+  chartRef:
+    kind: OCIRepository
+    name: postgresql-repository
+    namespace: flux-system
   install:
     createNamespace: true
   releaseName: postgresql-release
