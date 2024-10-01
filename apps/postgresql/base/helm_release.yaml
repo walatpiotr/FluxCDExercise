@@ -10,9 +10,10 @@ spec:
     spec:
       chart: postgresql
       version: '15.5.*'
-      sourceRef:
-        kind: HelmRepository
+      chartRef:
+        kind: OCIRepository
         name: postgresql-repository
+        namespace: flux-system
       interval: 5m
   install:
     createNamespace: true
