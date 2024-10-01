@@ -2,5 +2,6 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: postgresql
-  namespace: postgresql-ns
-
+  namespace: default
+spec:
+  targetNamespace: postgresql-ns
