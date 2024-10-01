@@ -11,7 +11,7 @@ spec:
       chart: postgresql
       version: '15.5.*'
       sourceRef:
-        kind: HelmRepository
+        kind: OCIRepository
         name: bitnami-postgresql
       interval: 5m
   install:
