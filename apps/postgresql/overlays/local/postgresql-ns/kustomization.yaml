@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
   - ../../../base
 patches:
-  - path: release-patch.yaml
+  - path: helm-release-patch.yaml
     target:
       kind: HelmRelease
