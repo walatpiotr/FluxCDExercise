@@ -7,5 +7,3 @@ spec:
   interval: 4h
   provider: generic
   url: https://registry-1.docker.io/bitnamicharts/postgresql
-  ref:
-    semver: "*"
