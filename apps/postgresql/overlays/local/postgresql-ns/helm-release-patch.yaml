@@ -3,12 +3,4 @@ kind: HelmRelease
 metadata:
   name: postgresql
   namespace: postgresql-ns
-spec:
-  values:
-    resources:
-      requests:
-        cpu: "2"
-        memory: 512Mi
-      limits:
-        cpu: "3"
-        memory: 1024Mi
+
