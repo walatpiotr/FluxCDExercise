@@ -3,6 +3,7 @@ namespace: postgresql-ns
 kind: Kustomization
 resources:
   - ../../../base
+  - secrets.yaml
 patches:
   - path: helm-release-patch.yaml
     target:

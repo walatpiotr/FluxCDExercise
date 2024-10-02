@@ -5,3 +5,12 @@ metadata:
   namespace: default
 spec:
   targetNamespace: postgresql-ns
+  values:
+    global:
+      postgresql:
+        auth:
+          username: "user"
+          existingSecret: "postgresql-secret"
+          secretKeys:
+            adminPasswordKey: "adminPassword"
+            userPasswordKey: "userPassword"            
