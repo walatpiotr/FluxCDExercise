@@ -9,7 +9,6 @@ spec:
     global:
       postgresql:
         auth:
-          username: "user"
           existingSecret: "postgresql-secret"
           secretKeys:
             adminPasswordKey: "adminPassword"
